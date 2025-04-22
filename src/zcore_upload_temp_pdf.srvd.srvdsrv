@@ -1,0 +1,5 @@
+@EndUserText.label: 'Upload template pdf'
+define service ZCORE_UPLOAD_TEMP_PDF {
+  expose ZCORE_I_UPLOAD_TEMP_PDF;
+  expose ZCORE_C_UPLOAD_TEMP_PDF;
+}

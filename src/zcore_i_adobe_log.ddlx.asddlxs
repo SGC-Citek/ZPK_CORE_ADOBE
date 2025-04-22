@@ -1,0 +1,19 @@
+@Metadata.layer: #CORE
+annotate view Zcore_I_Adobe_Log with
+{
+  @UI: { lineItem: [{ position: 10 }],
+         selectionField: [ { position: 10 } ] }
+  Id;
+  @UI: { lineItem: [{ position: 20 }],
+         selectionField: [ { position: 20 } ] }
+  Report;
+  @UI: { lineItem: [{ position: 30 }],
+         selectionField: [ { position: 30 } ] }
+  Template;
+  @UI: { lineItem: [{ position: 40 }],
+     selectionField: [ { position: 40 } ] }
+  Crtdat;
+  //    Xmldata;
+  //    FileContent;
+
+}

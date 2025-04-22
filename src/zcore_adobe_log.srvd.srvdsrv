@@ -1,0 +1,4 @@
+@EndUserText.label: 'Log Adobe Call'
+define service ZCORE_ADOBE_LOG {
+  expose Zcore_I_Adobe_Log;
+}

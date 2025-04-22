@@ -1,0 +1,32 @@
+managed implementation in class zbp_core_i_upload_temp_pdf unique;
+strict ( 2 );
+with draft;
+define behavior for ZCORE_I_UPLOAD_TEMP_PDF //alias <alias_name>
+persistent table zcore_tb_temppdf
+draft table zcore_pdf_draft
+lock master
+total etag lastchangedat
+authorization master ( instance )
+etag master Filename
+{
+//  field ( mandatory : create ) Id;
+
+  create;
+  update;
+  delete;
+  draft action Edit;
+  draft action Activate;
+  draft action Discard;
+  draft action Resume;
+
+  draft determine action Prepare;
+  field ( readonly ) lastchangedat;
+  mapping for zcore_tb_temppdf
+    {
+      Attachment    = file_content;
+      Filename      = file_name;
+      Id            = id;
+      FileType      = file_type;
+      lastchangedat = lastchangedat;
+    }
+}

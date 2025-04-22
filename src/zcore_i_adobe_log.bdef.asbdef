@@ -1,0 +1,13 @@
+managed implementation in class zbp_core_i_adobe_log unique;
+strict ( 2 );
+
+define behavior for Zcore_I_Adobe_Log //alias <alias_name>
+persistent table zcore_tb_adobe
+lock master
+authorization master ( instance )
+//etag master <field_name>
+{
+  create;
+ // update;
+  delete;
+}
